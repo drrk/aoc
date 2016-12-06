@@ -1,7 +1,7 @@
 count = 0
 lineno = 0
 sets = [[], [], []]
-File.open('day3_input').each do |line|
+File.open('day3_input.txt').each do |line|
   vals = line.chomp.strip.split(/\s+/)
   sets[0][lineno % 3] = vals[0]
   sets[1][lineno % 3] = vals[1]
