@@ -1,4 +1,4 @@
-# This is going to be fun, brute foce md5 hashing, 
+# This is going to be fun, brute foce md5 hashing,
 # it's like finding bitcoins
 require 'digest'
 

@@ -1,4 +1,4 @@
-# This is going to be fun, brute foce md5 hashing, 
+# This is going to be fun, brute foce md5 hashing,
 # it's like finding bitcoins
 require 'digest'
 
@@ -15,10 +15,10 @@ while found < 8
   case md5sum[5]
   when '0'..'7'
     if code[md5sum[5].to_i] == ' '
-      code[md5sum[5].to_i] = md5sum[6] 
+      code[md5sum[5].to_i] = md5sum[6]
       found += 1
       print '.'
     end
-  end 
+  end
 end
 print "\n#{code}\n"
