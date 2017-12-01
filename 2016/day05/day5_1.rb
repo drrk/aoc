@@ -5,6 +5,7 @@ require 'digest'
 code = ''
 seq = 0
 door_id = 'wtnhxymk'
+door_id = 'abbhdwsy'
 while code.length < 8
   md5sum = ''
   until md5sum.start_with?('00000')
