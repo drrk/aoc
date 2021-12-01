@@ -1,11 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    json (1.8.6)
-    rubytree (0.9.7)
-      json (~> 1.8)
-      structured_warnings (~> 0.2)
-    structured_warnings (0.3.0)
+    json (2.6.1)
+    rubytree (1.0.0)
+      json (~> 2.1)
+      structured_warnings (~> 0.3)
+    structured_warnings (0.4.0)
 
 PLATFORMS
   ruby
@@ -14,4 +14,4 @@ DEPENDENCIES
   rubytree
 
 BUNDLED WITH
-   1.15.1
+   2.1.4
