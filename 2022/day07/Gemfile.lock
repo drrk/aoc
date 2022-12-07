@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (2.6.3)
+    rubytree (2.0.0)
+      json (~> 2.0, > 2.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rubytree
+
+BUNDLED WITH
+   2.1.4
