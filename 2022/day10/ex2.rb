@@ -15,7 +15,7 @@ while clock < 240
     if pos == (x-1) || pos == x || pos == (x+1)
         print "#"
     else 
-        print "."
+        print " "
     end
 
     if instr == ''
