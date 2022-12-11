@@ -10,29 +10,20 @@ class Monkey
     end
 
     def throw_item
-        print "Inspecting..."
         @count += 1
         item = @items.shift
-        print "#{item} "
         if @inspect_op == :add
-            print " adding #{@inspect_val} "
             item += @inspect_val
         elsif @inspect_op == :mul
-            print " multiplying #{@inspect_val} "
             item *= @inspect_val
         elsif @inspect_op == :sq
-            print " squaring "
             item *= item
         else
-            print "\n\n Hmm inspect op is #{@inspect_op}\n\n"
         end
         item /= 3
-        print "bored "
         if item % @test_div == 0
-            print "throwing to #{@tdest}\n"
             @@monkeys[@tdest].catch(item)
         else
-            print "throwing to #{@fdest}\n"
             @@monkeys[@fdest].catch(item)
         end
     end
@@ -58,7 +49,6 @@ class Monkey
 
     def self.monkey_round
         for m in 0..7 do
-            print "---- Monkey #{m} ----\n"
             @@monkeys[m].throw_all
         end
     end
@@ -66,12 +56,9 @@ class Monkey
     def self.monkey_business
         activity = []
         for m in 0..7 do
-            print "Monkey #{m}: #{@@monkeys[m].count}\n"
             activity.push @@monkeys[m].count
         end
-        print "#{activity}\n"
         activity.sort!
-        print "#{activity}\n"
         return activity[7] * activity[6]
     end
 end
@@ -89,7 +76,6 @@ monkeys.push Monkey.new([72, 51, 93, 63, 80, 86, 81],:sq, 0, 11, 0, 4)
 Monkey.set_monkeys(monkeys)
 
 for round in 1..20 do
-    print "==== Round #{round.to_s.rjust(3)} ====\n"
     Monkey.monkey_round
 end
 

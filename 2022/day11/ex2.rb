@@ -65,12 +65,9 @@ class Monkey
     def self.monkey_business
         activity = []
         for m in 0..7 do
-            print "Monkey #{m}: #{@@monkeys[m].count}\n"
             activity.push @@monkeys[m].count
         end
-        print "#{activity}\n"
         activity.sort!
-        print "#{activity}\n"
         return activity[7] * activity[6]
     end
 end
